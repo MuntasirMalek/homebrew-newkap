@@ -1,30 +1,25 @@
 cask "newkap" do
-  version "4.0.0"
+  version "4.0.1"
 
   on_intel do
-    sha256 "ac380008b7038896008835ff233fa4b5e44b20415d5314f5bac6000cf2cae811"
-    url "https://github.com/MuntasirMalek/NewKap/releases/download/v#{version}/Kap-3.6.0-x64.dmg"
+    sha256 "cc6bbd1b3d02b45c864be5299ff4b37edd87a5893279ad4bf814bfd1fd55bc88"
+    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.1/NewKap-4.0.1-x64.dmg"
   end
 
   on_arm do
-    sha256 "61481ceeb7698652bc037f810f92a15f082b3092789aec236d18597a16323230"
-    url "https://github.com/MuntasirMalek/NewKap/releases/download/v#{version}/Kap-3.6.0-arm64.dmg"
+    sha256 "479ff086f17852c0f6866dc7a86f9e171d42254c38a4612883642ec5ffbebfc0"
+    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.1/NewKap-4.0.1-arm64.dmg"
   end
 
   name "NewKap"
   desc "Community-driven screen recorder (Kap fork)"
   homepage "https://github.com/MuntasirMalek/NewKap"
 
-  app "Kap.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Kap.app"]
-  end
+  app "NewKap.app"
 
   zap trash: [
     "~/Library/Application Support/Kap",
-    "~/Library/Preferences/com.wulkano.kap.plist",
+    "~/Library/Preferences/com.newkap.app.plist",
     "~/Library/Logs/Kap",
   ]
 end
