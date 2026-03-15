@@ -17,6 +17,10 @@ cask "newkap" do
 
   app "NewKap.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/NewKap.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/Kap",
     "~/Library/Preferences/com.newkap.app.plist",
