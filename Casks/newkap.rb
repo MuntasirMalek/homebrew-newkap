@@ -18,8 +18,10 @@ cask "newkap" do
   app "NewKap.app"
 
   zap trash: [
+    "~/Library/Application Support/NewKap",
     "~/Library/Application Support/Kap",
     "~/Library/Preferences/com.newkap.app.plist",
+    "~/Library/Logs/NewKap",
     "~/Library/Logs/Kap",
   ]
 end
