@@ -1,14 +1,14 @@
 cask "newkap" do
-  version "4.0.5"
+  version "4.0.6"
 
   on_intel do
-    sha256 "36c9dd64676c09d6f26594797f4d33ba25dd7a9890290e25b694bd7ac9703700"
-    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.5/NewKap-4.0.5-x64.dmg"
+    sha256 "7b2314eea63110db5ec0a1a8645312d9e1b18b4bbe8ad51c81ef5bab9a4ea477"
+    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.6/NewKap-4.0.6-x64.dmg"
   end
 
   on_arm do
-    sha256 "2c81686594933aefae642bae1d13df10410436997bf328783c23d332f6851a4c"
-    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.5/NewKap-4.0.5-arm64.dmg"
+    sha256 "1ec33e467811f84afcdde4ccb1e6b70925ffed45d0605e79b5b524bbe71c3e25"
+    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.6/NewKap-4.0.6-arm64.dmg"
   end
 
   name "NewKap"
