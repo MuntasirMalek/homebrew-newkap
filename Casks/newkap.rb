@@ -19,7 +19,6 @@ cask "newkap" do
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/NewKap.app"]
-    system_command "/usr/bin/tccutil", args: ["reset", "ScreenCapture", "com.newkap.app"]
   end
 
   zap trash: [
