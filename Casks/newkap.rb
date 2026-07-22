@@ -1,14 +1,14 @@
 cask "newkap" do
-  version "4.0.12"
+  version "4.0.13"
 
   on_intel do
-    sha256 "3a29edb6556be9eeea996cdf35b72ffe499a7d98905b078710d9d2913fbfc162"
-    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.12/NewKap-4.0.12-x64.dmg"
+    sha256 "9f3bae3bacbb3e06d2a2ea60a8b22211ec1ec6c78978cc7336dc267e01735e69"
+    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.13/NewKap-4.0.13-x64.dmg"
   end
 
   on_arm do
-    sha256 "caaee8b2f2bf5ea0df82df613638680f3dfabdc547a4c2d152e064b9583ffd7c"
-    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.12/NewKap-4.0.12-arm64.dmg"
+    sha256 "3db2e0becb2289d77580f87799cbec2f336ca2ef9e3bba7b1a12e6bd2f599d83"
+    url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.13/NewKap-4.0.13-arm64.dmg"
   end
 
   name "NewKap"
@@ -19,6 +19,7 @@ cask "newkap" do
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/NewKap.app"]
+    system_command "/usr/bin/tccutil", args: ["reset", "ScreenCapture", "com.newkap.app"]
   end
 
   zap trash: [
