@@ -2,12 +2,12 @@ cask "newkap" do
   version "4.0.13"
 
   on_intel do
-    sha256 "9f3bae3bacbb3e06d2a2ea60a8b22211ec1ec6c78978cc7336dc267e01735e69"
+    sha256 "2c7b6e8ad5ab9974a06656b179125f21273edc9ce070dd18c8a44a05574ee71a"
     url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.13/NewKap-4.0.13-x64.dmg"
   end
 
   on_arm do
-    sha256 "3db2e0becb2289d77580f87799cbec2f336ca2ef9e3bba7b1a12e6bd2f599d83"
+    sha256 "f90d734861926677c17a2b5d3093412439422f156bf463ec8b62f0db504cb6dc"
     url "https://github.com/MuntasirMalek/NewKap/releases/download/v4.0.13/NewKap-4.0.13-arm64.dmg"
   end
 
