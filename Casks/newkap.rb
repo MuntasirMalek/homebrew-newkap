@@ -17,8 +17,8 @@ cask "newkap" do
 
   app "NewKap.app"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-cr", "#{appdir}/NewKap.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/NewKap.app"]
   end
 
   zap trash: [
