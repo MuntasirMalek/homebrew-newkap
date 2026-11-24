@@ -1,9 +1,9 @@
 cask "newkap" do
   arch arm: "arm64", intel: "x64"
 
-  version "4.0.13"
-  sha256 arm:   "f90d734861926677c17a2b5d3093412439422f156bf463ec8b62f0db504cb6dc",
-         intel: "2c7b6e8ad5ab9974a06656b179125f21273edc9ce070dd18c8a44a05574ee71a"
+  version "4.0.14"
+  sha256 arm:   "193f57c3b776322946ff27ff64a3688d97dcfce6e66ad9f2301bdef32acaa3f8",
+         intel: "b2cd9887a3b9fee9ae175f03d1052e80560b588cb750a973e5398d3c992742d6"
 
   url "https://github.com/MuntasirMalek/NewKap/releases/download/v#{version}/NewKap-#{version}-#{arch}.dmg"
   name "NewKap"
