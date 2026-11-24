@@ -6,8 +6,11 @@ Community-driven screen recorder for macOS — a fork of [Kap](https://github.co
 
 ```bash
 brew tap MuntasirMalek/newkap
+brew trust muntasirmalek/newkap
 brew install --cask newkap
 ```
+
+> **Note:** Homebrew 6.0+ requires trusting third-party taps before installing casks. The `brew trust` step above grants trust for this tap.
 
 ## Update
 
@@ -19,6 +22,12 @@ brew upgrade --cask newkap
 
 ```bash
 brew uninstall --cask newkap
+```
+
+To also remove NewKap preferences, caches, and logs:
+
+```bash
+brew uninstall --zap --cask newkap
 ```
 
 ## More Info
